@@ -1,0 +1,5 @@
+apikey = ""
+title = ""
+book_url = ""
+collection_name = ""
+description = ""

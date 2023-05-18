@@ -3,7 +3,7 @@
 
 # ------------------ IMPORT ------------------
 
-# variables
+# all relevant variables
 from details import apikey, title, book_url, collection_name, description
 
 # Setting up api
@@ -27,6 +27,7 @@ from langchain.agents.agent_toolkits import (
 
 
 def docllm(apikey, title, pdfurl, collection_name, description):
+
     # -------------- SETTING UP LLM --------------
 
     # Setting up env key
@@ -76,6 +77,5 @@ def docllm(apikey, title, pdfurl, collection_name, description):
         with st.expander("Document Similiarity Search"):
             search = store.similarity_search_with_score(prompt)
             st.write(search[0][0].page_content)
-
 
 docllm(apikey, title, book_url, collection_name, description)

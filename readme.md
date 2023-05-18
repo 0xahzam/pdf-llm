@@ -6,7 +6,6 @@
 
 ```
 pip install -r requirements.txt
-
 ```
 
 **step 2:** grab your openai api key and paste the pdf in the same directory
